@@ -1,0 +1,48 @@
+FULLAI — INTERACTION POLISH
+
+A separate copy of the current repository with a small hover and project-card
+alignment patch. Keep previous project folders separate.
+
+RUN ON WINDOWS
+1. Install a supported Node.js version from https://nodejs.org/ if needed.
+   This build was checked with Node 24.19.0. Vite requires Node 20.19+ or 22.12+.
+2. Extract the ZIP completely, for example to:
+   C:\Projects\FullAI-Interaction-Polish
+3. Open Command Prompt or PowerShell in the folder containing package.json.
+4. Run:
+   npm ci
+   npm run dev
+5. Open:
+   http://localhost:5174
+
+Port 5174 is fixed. If it is busy, stop the previous server with Ctrl+C first.
+Vite will not silently choose a different port or show another project.
+
+BUILD AND PREVIEW
+   npm run build
+   npm run preview -- --host 127.0.0.1 --port 5174 --strictPort
+Stop either server with Ctrl+C.
+
+WHAT CHANGED
+- Existing images gently zoom on hover, with a slight lift and smooth return.
+- All three project cards use equal widths/heights and aligned text rows at each
+  breakpoint, including the stacked mobile layout and EN / Kannada.
+- Existing section order, assets, copy, colors, fonts, links, forms, payment code
+  and scroll animations are retained. No new animation system was added.
+
+QUICK MANUAL REVIEW
+- Hover the hero, program, project and audience images, then move away.
+- Compare the three project cards on desktop, tablet and phone widths.
+- Toggle EN / Kannada, resize, and check card text remains visible and aligned.
+- Try the existing navigation, Free Resources and Sign Up, closing without submit.
+- Check the original YouTube links online and reduced-motion mode.
+
+PAYMENT BOUNDARY
+Vite serves the frontend but does not execute PHP. Payments still require the
+existing fullai.in PHP/server setup and private configuration outside the public
+web root. Do not enter real payment or personal details during local review.
+No live payment, external form submission, push or deployment was performed.
+
+See INTERACTION-POLISH-NOTES.md for scope and verification boundaries.
+REDESIGN-NOTES.md and CONTENT-PRESERVATION-REPORT.md are historical baseline
+records and do not describe verification performed for this patch.
